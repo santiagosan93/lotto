@@ -24,8 +24,8 @@ class Lotto extends Component {
       selectedNumbers.push(pulledNumber)
       max -= 1
     }
-    this.setState({
-      numbers: selectedNumbers
+    this.setState((prevState) => {
+      return { numbers: selectedNumbers }
     })
   }
 
